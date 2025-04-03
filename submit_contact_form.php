@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'asherdanieltibayan@gmail.com'; // Your Gmail
-                $mail->Password = 'jjqc lxbp mlvn uuaw'; // Use Gmail App Password (NOT your real password)
+                $mail->Username = 'asherdanieltibayan@gmail.com'; 
+                $mail->Password = 'jjqc lxbp mlvn uuaw'; 
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
 
                 // Email Headers
                 $mail->setFrom('asherdanieltibayan@gmail.com', 'Asher Daniel');
-                $mail->addAddress('asherdanieltibayan@gmail.com'); // Your email (where you receive messages)
+                $mail->addAddress('asherdanieltibayan@gmail.com'); 
 
                 // Email Content
                 $mail->isHTML(true);
