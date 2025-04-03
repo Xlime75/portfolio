@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Homepage</title>
-        <link rel="stylesheet" href="main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-      <nav class="topnav">
-        <a class="btn" href="#home">
-            <span class="text">Text</span>
-            <span class="flip-front">Home</span>
-            <span class="flip-back">Home</span>
-        </a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asher Daniel Tibayan | Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
 
-        <a class="btn" href="About.html">
-            <span class="text">Text</span>
-            <span class="flip-front">About</span>
-            <span class="flip-back">About</span>
-        </a>
-
-        <a class="btn" href="TechStack.html">
-            <span class="text">Text</span>
-            <span class="flip-front">Tech Stack</span>
-            <span class="flip-back">Tech Stack</span>
-        </a>
-
-        <a class="btn" href="Contacts.html">
-            <span class="text">Text</span>
-            <span class="flip-front">Contact</span>
-            <span class="flip-back">Contact</span>
-        </a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Photos/logo.png" alt="Logo"> 
+            <span>ASHER DANIEL TIBAYAN</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="techstack.html">Skills & Experience</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Icon -->
     </nav>
-        <header>
-            <h1>Asher Daniel Magaling Tibayan</h1>
-        </header>
-        
-        <section class="portrait">
-            <img src="Photos/ash.jpg" alt="picture of me" height="500px" width="500px">
-        </section>
-        
-        <section class="intro">
-            <p>
-                Welcome to my portfolio! I'm Asher Daniel Magaling Tibayan, a passionate gamer.
-            </br>
-            </br>
-                Chill, relax and look around to learn more about me!
-            </p>
-        </section>
-    </body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="small-text">Hello, my name is</p>
+                <h1>Asher Daniel Tibayan</h1>
+                <h2>BSIT Student at ST. Dominic Collage Of Asia</h2>
+                <div class="contact-info">
+                    <p>📧 asherdanieltibayan@gmail.com</p>
+                </div>
+                <a href="contacts.html" class="cta-button">Get in Touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="Photos/ash.jpg" alt="Asher Daniel Tibayan">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Asher Daniel Tibayan. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+
+</body>
 </html>
