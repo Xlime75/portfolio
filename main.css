@@ -156,6 +156,12 @@ h2 {
   color: #007bff;
 }
 
+.techstack h3 {
+  font-size: 25px;
+  margin-top: 50px;
+  color: #007bff;
+}
+
 .skills ul,
 .experience ul {
   list-style-type: none;
