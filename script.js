@@ -1,14 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Trigger a SweetAlert popup after a short delay (optional)
-    setTimeout(() => {
-        Swal.fire({
-            title: 'Welcome to my website!',
-            text: 'Feel free to explore my portfolio.',
-            icon: 'success',
-            confirmButtonText: 'Thanks!'
-        });
-    }, 1000); // 1 second delay before the popup appears
-
     // Anime.js Animations
 
     // Animating the hero section title (h1)
