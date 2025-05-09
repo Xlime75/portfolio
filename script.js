@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Contact form handler
+    // Contact form handler with styled SweetAlert2
     const form = document.getElementById("contactForm");
     if (form) {
         form.addEventListener("submit", function (e) {
@@ -27,10 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => {
                 if (response.ok) {
                     Swal.fire({
-                        title: "Message Sent!",
-                        text: "Thanks for contacting me. I'll get back to you soon.",
+                        title: "🎉 Thank you!",
+                        text: "Your message has been sent successfully.",
                         icon: "success",
-                        confirmButtonText: "Close"
+                        confirmButtonText: "Awesome!",
+                        background: "#f0f8ff",
+                        color: "#333",
+                        confirmButtonColor: "#007bff",
+                        showClass: {
+                            popup: 'animate__animated animate__fadeInDown'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__fadeOutUp'
+                        }
                     });
                     form.reset();
                 } else {
@@ -39,10 +48,19 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .catch(error => {
                 Swal.fire({
-                    title: "Oops!",
+                    title: "⚠️ Oops!",
                     text: "Something went wrong. Please try again later.",
                     icon: "error",
-                    confirmButtonText: "Okay"
+                    confirmButtonText: "Retry",
+                    background: "#fff0f0",
+                    color: "#333",
+                    confirmButtonColor: "#dc3545",
+                    showClass: {
+                        popup: 'animate__animated animate__shakeX'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOut'
+                    }
                 });
             });
         });
