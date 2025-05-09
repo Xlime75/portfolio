@@ -1,6 +1,9 @@
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 /* General Styling */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
@@ -29,6 +32,10 @@ body {
 
 .hero-text {
   max-width: 500px;
+}
+
+h1, h2, .small-text, .cta-button, .footer a, .about h1, .techstack h1, .contact h1 {
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
