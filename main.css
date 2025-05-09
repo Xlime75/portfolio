@@ -133,7 +133,7 @@ h2 {
 
 /* Skills & Experience Section */
 .techstack {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   padding: 80px 10%;
   color: #333;
 }
@@ -176,7 +176,7 @@ h2 {
   align-items: center;
   font-weight: 500;
   color: #333;
-  background-color: #f6f7d7;
+  background-color: #bcf5e7;
   border-radius: 12px;
   padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
