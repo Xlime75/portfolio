@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Anime.js Animations (Hero Section)
+    // === Hero Section Animation ===
     anime({
         targets: '.hero h1',
         translateY: [-100, 0],
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         easing: 'easeOutExpo'
     });
 
-    // Anime.js Animations (About Section)
+    // === About Section Animation ===
     anime({
         targets: '.about h1',
         translateY: [-100, 0],
@@ -53,17 +53,76 @@ document.addEventListener("DOMContentLoaded", function () {
         easing: 'easeOutExpo'
     });
 
-    // Mobile menu toggle
+    // === Tech Stack Page Animation ===
+    if (document.querySelector('.techstack')) {
+        anime({
+            targets: '.techstack h1, .techstack h2, .techstack h3',
+            translateY: [-40, 0],
+            opacity: [0, 1],
+            duration: 1200,
+            delay: anime.stagger(200),
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '.skill-item',
+            translateY: [50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: anime.stagger(100, { start: 600 }),
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '.experience p, .experience ul, .experience li',
+            translateY: [30, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: anime.stagger(150, { start: 800 }),
+            easing: 'easeOutExpo'
+        });
+    }
+
+    // === Contact Page Animation ===
+    if (document.querySelector('.contact')) {
+        anime({
+            targets: '.contact h1, .contact p:first-of-type',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            duration: 1200,
+            delay: anime.stagger(200),
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '.contact-form input, .contact-form textarea, .contact-form button',
+            translateX: [-30, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: anime.stagger(200, { start: 500 }),
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '.contact-info p, .contact-info a',
+            translateY: [30, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: 1000,
+            easing: 'easeOutExpo'
+        });
+    }
+
+    // === Mobile Navigation Toggle ===
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
-
     if (menuToggle) {
         menuToggle.addEventListener("click", function () {
             navLinks.classList.toggle("active");
         });
     }
 
-    // Contact form handler with styled SweetAlert2
+    // === Contact Form Submission with SweetAlert2 ===
     const form = document.getElementById("contactForm");
     if (form) {
         form.addEventListener("submit", function (e) {
