@@ -40,6 +40,30 @@ document.addEventListener("DOMContentLoaded", function () {
         easing: 'easeOutExpo'
     });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Anime.js Animations
+
+    // Animating the "About Me" section header (h1)
+    anime({
+        targets: '.about h1',
+        translateY: [-100, 0],  // Moves up from -100px to 0px
+        opacity: [0, 1],        // Fades in from opacity 0 to 1
+        duration: 1500,         // Duration of the animation (in ms)
+        easing: 'easeOutExpo'   // Easing function for smooth transition
+    });
+
+    // Animating the paragraphs (p)
+    anime({
+        targets: '.about p',
+        translateY: [50, 0],    // Moves up from 50px to 0px
+        opacity: [0, 1],        // Fades in from opacity 0 to 1
+        duration: 1500,
+        delay: anime.stagger(300), // Adds a delay between each paragraph animation
+        easing: 'easeOutExpo'
+    });
+});
+
+    
     // Mobile menu toggle
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
