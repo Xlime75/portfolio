@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asher Daniel Tibayan | Techstack</title>
     <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link
         rel="stylesheet"
@@ -15,46 +17,61 @@
     />
     <style>
         /* Optional icon styling */
-        .skills li i {
+        .skills li img {
             margin-right: 10px;
-            color: #007bff;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="Photos/logo.png" alt="Logo">
-            <span>ASHER</span>
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Photos/logo.png" alt="Logo" height="40" class="me-2">
+                <span class="fw-bold text-dark">ASHER</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-uppercase fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="tech-stack.html">Tech Stack</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Icon -->
     </nav>
 
     <!-- Skills & Experience Section -->
-    <section class="techstack">
+    <section class="techstack" style="margin-top: 80px;">
         <div class="techstack-content">
             <h1>Skills & Experience</h1>
             <div class="skills">
                 <h2>Technical Skills</h2>
                 <ul>
-                    <li><i class="fab fa-html5"></i> HTML</li>
-                    <li><i class="fab fa-css3-alt"></i> CSS</li>
-                    <li><i class="fab fa-java"></i> Java</li>
-                    <li><i class="fas fa-code"></i> C++</li>
-                    <li><i class="fas fa-code"></i> VS Code</li>
-                    <li><i class="fab fa-github"></i> Git & GitHub</li>
-                    <li><i class="fas fa-laptop-code"></i> NetBeans</li>
-                    <li><i class="fab fa-android"></i> Android Studio</li>
-                    <li><i class="fas fa-terminal"></i> Dev C++</li>
-                    <li><i class="fas fa-database"></i> MySQL</li>
+                    <li><img src="Photos/html.jpg" alt="HTML Logo" width="30"> HTML</li>
+                    <li><img src="Photos/css.jpg" alt="CSS Logo" width="30"> CSS</li>
+                    <li><img src="Photos/java.png" alt="Java Logo" width="30"> Java</li>
+                    <li><img src="Photos/c++.png" alt="C++ Logo" width="30"> C++</li>
+                    <li><img src="Photos/vs_code.png" alt="VS Code Logo" width="30"> VS Code</li>
+                    <li><img src="Photos/git.png" alt="GitHub Logo" width="30"> GitHub</li>
+                    <li><img src="Photos/github.png" alt="GitHub Logo" width="30"> GitHub</li>
+                    <li><img src="Photos/net_beans.png" alt="NetBeans Logo" width="30"> NetBeans</li>
+                    <li><img src="Photos/android_studio.png" alt="Android Studio Logo" width="30"> Android Studio</li>
+                    <li><img src="Photos/dev.png" alt="Dev C++ Logo" width="30"> Dev C++</li>
+                    <li><img src="Photos/oracle.png" alt="MySQL Logo" width="30"> Oracle SQL</li>
                 </ul>
             </div>
 
@@ -82,6 +99,8 @@
         <p>© 2025 Asher Daniel Tibayan. All rights reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS Bundle (for navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript Link -->
     <script src="script.js"></script>
 
