@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     Swal.fire({
                         title: "🎉 Thank you!",
                         text: "Your message has been sent successfully.",
+                        imageUrl: "Photos/logo.png", // ✅ Use your actual logo path
+                        imageWidth: 80,
+                        imageHeight: 80,
+                        imageAlt: "Asher Logo",
                         icon: "success",
                         confirmButtonText: "Awesome!",
                         background: "#f0f8ff",
