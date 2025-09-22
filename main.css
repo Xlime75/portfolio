@@ -362,9 +362,7 @@ h2 {
     font-size: 16px;
   }
 }
-/* ===============================
-   Certifications Section
-================================= */
+/* Certifications Section */
 .certifications {
   margin-top: 60px;
   text-align: center;
@@ -376,31 +374,30 @@ h2 {
   color: #007bff;
 }
 
+/* Certificates container */
 #certificateContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
 }
 
 .certificate {
-  background-color: #bcf5e7;
-  padding: 30px;
+  max-width: 450px;
+  max-height: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-size: 20px;
-  font-weight: 600;
+  display: none; /* only active one shows */
   cursor: pointer;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  display: none; /* hidden by default, only active one shows */
 }
 
 .certificate.active {
   display: block;
 }
 
+/* Hover effect */
 .certificate:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
@@ -411,22 +408,27 @@ h2 {
   transform: scale(1.5);
   z-index: 10;
   position: relative;
-  background-color: #02a393;
-  color: white;
 }
 
-/* Button Styling */
-#nextBtn {
+/* Buttons */
+.cert-controls {
   margin-top: 20px;
-  padding: 12px 25px;
+}
+
+.cert-controls .btn {
+  padding: 10px 20px;
+  margin: 0 10px;
   font-size: 16px;
+  border: none;
   border-radius: 8px;
   background-color: #007bff;
   color: white;
-  border: none;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#nextBtn:hover {
+.cert-controls .btn:hover {
   background-color: #0056b3;
+}
+
 }
