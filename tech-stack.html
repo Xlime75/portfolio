@@ -14,9 +14,8 @@
     <!-- Google Fonts for Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
-     <!-- Anime.js CDN -->
+    <!-- Anime.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    
 </head>
 <body>
 
@@ -112,10 +111,6 @@
                 </div>
                 <!-- Newly Added -->
                 <div class="skill-item">
-                    <img src="Photos/dart.png" alt="Dart" />
-                    <span>Dart</span>
-                </div>
-                <div class="skill-item">
                     <img src="Photos/flutter.png" alt="Flutter" />
                     <span>Flutter</span>
                 </div>
@@ -146,13 +141,14 @@
             </div>
 
             <!-- Certifications Section -->
-            <div class="certifications">
+            <div class="certifications text-center mt-5">
                 <h2>Certifications</h2>
-                <ul>
-                    <li>✔️ [Certification Name] – [Issuer], [Year]</li>
-                    <li>✔️ [Certification Name] – [Issuer], [Year]</li>
-                    <!-- Add more certifications here -->
-                </ul>
+                <div id="certificateContainer">
+                    <div class="certificate">Certificate 1</div>
+                    <div class="certificate" style="display: none;">Certificate 2</div>
+                    <div class="certificate" style="display: none;">Certificate 3</div>
+                </div>
+                <button id="nextBtn" class="btn btn-dark mt-3">Next Certificate</button>
             </div>
         </div>
     </section>
