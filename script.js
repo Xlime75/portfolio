@@ -192,4 +192,58 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
+    // === Certifications Section ===
+const certificates = document.querySelectorAll(".certificate");
+const nextBtn = document.getElementById("nextBtn");
+
+if (certificates.length > 0 && nextBtn) {
+    let currentCert = 0;
+    let autoSlide;
+
+    function showCertificate(index) {
+        certificates.forEach((cert, i) => {
+            cert.classList.remove("active", "enlarged");
+            if (i === index) {
+                cert.classList.add("active");
+            }
+        });
+    }
+
+    // Next button
+    nextBtn.addEventListener("click", () => {
+        currentCert = (currentCert + 1) % certificates.length;
+        showCertificate(currentCert);
+        resetAutoSlide();
+    });
+
+    // Click to enlarge certificate
+    certificates.forEach(cert => {
+        cert.addEventListener("click", () => {
+            if (cert.classList.contains("enlarged")) {
+                cert.classList.remove("enlarged");
+            } else {
+                certificates.forEach(c => c.classList.remove("enlarged"));
+                cert.classList.add("enlarged");
+            }
+        });
+    });
+
+    // Auto slide every 5 seconds
+    function startAutoSlide() {
+        autoSlide = setInterval(() => {
+            currentCert = (currentCert + 1) % certificates.length;
+            showCertificate(currentCert);
+        }, 5000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlide);
+        startAutoSlide();
+    }
+
+    // Initialize
+    showCertificate(currentCert);
+    startAutoSlide();
+}
+    
 });
