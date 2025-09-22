@@ -192,11 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
-    // === Certifications Section ===
+// === Certifications Section ===
 const certificates = document.querySelectorAll(".certificate");
 const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 
-if (certificates.length > 0 && nextBtn) {
+if (certificates.length > 0 && nextBtn && prevBtn) {
     let currentCert = 0;
     let autoSlide;
 
@@ -216,7 +217,14 @@ if (certificates.length > 0 && nextBtn) {
         resetAutoSlide();
     });
 
-    // Click to enlarge certificate
+    // Previous button
+    prevBtn.addEventListener("click", () => {
+        currentCert = (currentCert - 1 + certificates.length) % certificates.length;
+        showCertificate(currentCert);
+        resetAutoSlide();
+    });
+
+    // Click to enlarge
     certificates.forEach(cert => {
         cert.addEventListener("click", () => {
             if (cert.classList.contains("enlarged")) {
@@ -228,7 +236,7 @@ if (certificates.length > 0 && nextBtn) {
         });
     });
 
-    // Auto slide every 5 seconds
+    // Auto slide
     function startAutoSlide() {
         autoSlide = setInterval(() => {
             currentCert = (currentCert + 1) % certificates.length;
@@ -245,5 +253,6 @@ if (certificates.length > 0 && nextBtn) {
     showCertificate(currentCert);
     startAutoSlide();
 }
+
     
 });
