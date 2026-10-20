@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Asher Daniel Tibayan's academic progress, credentials, projects, and leadership portfolio.">
+    <link rel="icon" type="image/png" href="Photos/logo.png">
     <title>Asher Daniel Tibayan | Academic Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
@@ -41,18 +42,12 @@
         </header>
 
         <div class="portfolio-wrap portfolio-content">
-            <aside class="portfolio-notice" aria-label="Portfolio completion reminder">
-                <p>Note: This portfolio is a work in progress. Some sections are incomplete or contain placeholder text. I will update it as I complete more projects and earn additional credentials.</p>
-            </aside>
-
             <nav class="portfolio-toc" aria-label="Portfolio sections">
                 <a href="#academic-progress">Academic progress</a>
+                <a href="#awards">Awards</a>
                 <a href="#credentials">Credentials</a>
-                <a href="#iot-project">IoT project</a>
                 <a href="#capstone">Capstone</a>
-                <a href="#course-projects">Course projects</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#competitions">Competitions &amp; awards</a>
+                <a href="#other-projects">Other projects</a>
                 <a href="#leadership">Leadership</a>
             </nav>
 
@@ -63,17 +58,35 @@
                     <p>A snapshot of my academic path and the skills I’m continuing to develop.</p>
                 </div>
                 <div class="portfolio-grid two-columns">
-                    <article class="portfolio-card">
-                        <span class="card-kicker">CURRENT PROGRAM</span>
+                    <article class="portfolio-card education-card">
+                        <span class="status-pill education-status current">Current</span>
                         <h3>Bachelor of Science in Information Technology</h3>
                         <p>St. Dominic College of Asia</p>
-                        <p class="muted-copy">4th Year BSIT, 3rd Year 2nd Semester Dean's Lister.</p>
+                        <p class="muted-copy">4th Year BSIT · GWA: 1.5</p>
                     </article>
-                    <article class="portfolio-card">
-                        <span class="card-kicker">EARLIER STUDIES</span>
+                    <article class="portfolio-card education-card">
+                        <span class="card-kicker">PREVIOUS STUDY</span>
                         <h3>Bachelor of Science in Computer Science with Specialization in Software Engineering</h3>
                         <p>FEU Institute of Technology · Completed first year</p>
                         <p class="muted-copy">My earlier studies helped build a foundation in computing and software development.</p>
+                    </article>
+                    <article class="portfolio-card education-card">
+                        <span class="status-pill education-status graduate">Graduate</span>
+                        <h3>Senior High School · STEM</h3>
+                        <p>Unida Christian Colleges · 2021–2023</p>
+                        <p class="muted-copy">Best in Research · With Honors</p>
+                    </article>
+                    <article class="portfolio-card education-card">
+                        <span class="status-pill education-status graduate">Graduate</span>
+                        <h3>Junior High School</h3>
+                        <p>Unida Christian Colleges · 2017–2021</p>
+                        <p class="muted-copy">Best in TLE – Computer Servicing System · With Honors</p>
+                    </article>
+                    <article class="portfolio-card education-card">
+                        <span class="status-pill education-status graduate">Graduate</span>
+                        <h3>Elementary</h3>
+                        <p>Unida Christian Colleges · 2011–2017</p>
+                        <p class="muted-copy">With Honors</p>
                     </article>
                 </div>
                 <div class="skills-summary">
@@ -81,15 +94,35 @@
                     <div class="skill-tags" aria-label="Technical skills listed on my Tech Stack page">
                         <span>HTML</span><span>CSS</span><span>Java</span><span>C++</span><span>Dart</span><span>Flutter</span><span>Firebase</span><span>Oracle SQL</span><span>MongoDB</span><span>Node.js</span><span>Express.js</span><span>Git &amp; GitHub</span>
                     </div>
-                    <p class="muted-copy">Tools and languages are listed on my <a href="tech-stack.html">Tech Stack page</a>, adjust this list to reflect your current experience accurately.</p>
+                    <p class="muted-copy">See my <a href="tech-stack.html">Tech Stack page</a> for the full list.</p>
                 </div>
+            </section>
+
+            <section class="portfolio-section" id="awards">
+                <div class="section-heading">
+                    <p class="portfolio-eyebrow">02 · ACADEMIC RECOGNITION</p>
+                    <h2>Awards</h2>
+                    <p>Recognition for academic achievement at St. Dominic College of Asia.</p>
+                </div>
+                <article class="portfolio-card credential-card">
+                    <div>
+                        <span class="card-kicker">FIRST SEMESTER · ACADEMIC YEAR 2025–2026</span>
+                        <h3>Dean’s Lister</h3>
+                        <p>St. Dominic College of Asia · GWA: 1.5</p>
+                        <a class="evidence-link" href="Photos/DL.jpg" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <a class="credential-thumb" href="Photos/DL.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Dean’s Lister certificate for First Semester, Academic Year 2025–2026">
+                        <img src="Photos/DL.jpg" alt="Dean’s Lister certificate from St. Dominic College of Asia for First Semester, Academic Year 2025–2026">
+                    </a>
+                </article>
             </section>
 
             <section class="portfolio-section" id="credentials">
                 <div class="section-heading">
-                    <p class="portfolio-eyebrow">02 · CONTINUOUS LEARNING</p>
+                    <p class="portfolio-eyebrow">03 · CONTINUOUS LEARNING</p>
                     <h2>Certifications &amp; course completions</h2>
                     <p>Credentials currently supported by certificate images in this portfolio.</p>
+                    <a class="evidence-link" href="https://www.credly.com/users/asher-daniel-tibayan/badges/credly" target="_blank" rel="noopener noreferrer">View my Credly badges <span aria-hidden="true">↗</span></a>
                 </div>
                 <h3 class="subsection-title">Certification</h3>
                 <div class="portfolio-grid">
@@ -130,121 +163,97 @@
                             <img src="Photos/cert3.jpg" alt="Cisco Networking Academy Ethical Hacker course completion certificate, issued September 22, 2025">
                         </a>
                     </article>
+                    <article class="portfolio-card credential-card">
+                        <div>
+                            <span class="card-kicker">CISCO NETWORKING ACADEMY · MAR 10, 2026</span>
+                            <h3>Introduction to IoT and Digital Transformation</h3>
+                            <p>St. Dominic College of Asia · Cisco Networking Academy · completed March 10, 2026</p>
+                            <a class="evidence-link" href="Photos/cert4.jpg" target="_blank" rel="noopener noreferrer">View course certificate <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <a class="credential-thumb" href="Photos/cert4.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Introduction to IoT and Digital Transformation course certificate">
+                            <img src="Photos/cert4.jpg" alt="Cisco Networking Academy certificate for Introduction to IoT and Digital Transformation, completed March 10, 2026">
+                        </a>
+                    </article>
                 </div>
-                <p class="portfolio-prompt">Add any other completed courses from Oracle Academy, AWS Academy, Microsoft, Coursera, Google, Udemy, or other providers. Include the exact course title, provider, completion date, and a certificate or credential link where available.</p>
-            </section>
-
-            <section class="portfolio-section" id="iot-project">
-                <div class="section-heading">
-                    <p class="portfolio-eyebrow">03 · CONNECTED TECHNOLOGY</p>
-                    <h2>IoT project</h2>
-                    <p>Document the problem your connected device or system addresses, how you contributed, and what it produced.</p>
-                </div>
-                <article class="portfolio-card project-card">
-                    <span class="status-pill">Finished</span>
-                    <h3>Smart Medication Reminder System with Sensor-Based Intake Monitoring</h3>
-                    <p><strong>Description:</strong> [What does the system do, and who is it for?]</p>
-                    <div class="project-details">
-                        <p><strong>Objectives</strong><br>[List the problem and measurable goals.]</p>
-                        <p><strong>Technologies &amp; components</strong><br>[Board, sensors, actuators, connectivity, platform, and software.]</p>
-                        <p><strong>My contribution</strong><br>[Specific tasks you personally completed.]</p>
-                        <p><strong>Output &amp; status</strong><br>[Demonstration/results and whether it is planned, in progress, or complete.]</p>
-                    </div>
-                    <div class="evidence-placeholder">Add project photos, a system diagram, screenshots, demo video, or documentation link. Remove any private data before publishing.</div>
-                </article>
             </section>
 
             <section class="portfolio-section" id="capstone">
                 <div class="section-heading">
                     <p class="portfolio-eyebrow">04 · MAJOR PROJECT</p>
                     <h2>Capstone project</h2>
-                    <p>Show the current stage as well as the idea, goals, team, and your own role.</p>
+                    <p>An ongoing team project exploring smart medication adherence and predictive monitoring.</p>
                 </div>
                 <article class="portfolio-card project-card">
                     <span class="status-pill">Ongoing</span>
-                    <h3> Rx Box: AI Driven Smart Pillbox for Correct Medication Adherence with Predictive Behavior Analysis and Family Notification Support for Risk Prevention</h3>
-                    <p><strong>Description:</strong> [Summarize the intended users, need, and proposed solution.]</p>
+                    <h3>Rx Box: AI-Driven Smart Pillbox for Medication Adherence</h3>
+                    <p>A smart pillbox concept combining medication reminders with predictive behavior analysis and family notifications to help reduce adherence risks.</p>
                     <div class="project-details">
-                        <p><strong>Objectives</strong><br>[What outcomes is the project designed to achieve?]</p>
-                        <p><strong>Technologies</strong><br>[Languages, frameworks, database, devices, and tools.]</p>
-                        <p><strong>Team members</strong><br>Tibayan, Asher Daniel M., Layosa, John Carl E., Fronteras, Vincent Ace C., Montajas, Kristine Mae B.  </p>
-                        <p><strong>My role &amp; status</strong><br>[Your responsibilities and current phase: proposal, design, development, testing, or completed.]</p>
+                        <p><strong>My contribution</strong><br>Hardware development, with additional work on code and documentation progress tracking.</p>
+                        <p><strong>Team</strong><br>Asher Daniel M. Tibayan, John Carl E. Layosa, Vincent Ace C. Fronteras, and Kristine Mae B. Montajas.</p>
                     </div>
-                    <div class="evidence-placeholder">Add approved screenshots, diagrams, documentation, or a public demo/repository link.</div>
+                    <div class="project-links">
+                        <a class="evidence-link" href="https://med-reminder-web-app.vercel.app/sign-in?from=%2F" target="_blank" rel="noopener noreferrer">Open the web app <span aria-hidden="true">↗</span></a>
+                        <a class="evidence-link" href="https://github.com/Brook-sheet/med-reminder-web-app" target="_blank" rel="noopener noreferrer">View the GitHub repository <span aria-hidden="true">↗</span></a>
+                    </div>
                 </article>
             </section>
 
-            <section class="portfolio-section" id="course-projects">
+            <section class="portfolio-section" id="other-projects">
                 <div class="section-heading">
                     <p class="portfolio-eyebrow">05 · APPLIED LEARNING</p>
-                    <h2>Third-year course projects</h2>
-                    <p>Highlight substantial work from your third-year courses and make your individual contribution clear.</p>
+                    <h2>Other Projects</h2>
+                    <p>Selected academic and personal projects combining software, hardware, and applied AI.</p>
                 </div>
                 <div class="portfolio-grid two-columns">
                     <article class="portfolio-card project-card">
+                        <span class="status-pill">Ongoing</span>
+                        <h3>Smart Medication Reminder System with Sensor-Based Intake Monitoring</h3>
+                        <p>An IoT project focused on medication reminders and sensor-based monitoring of medication intake.</p>
+                        <div class="project-links">
+                            <a class="evidence-link" href="https://med-reminder-web-app.vercel.app/sign-in?from=%2F" target="_blank" rel="noopener noreferrer">Open the web app <span aria-hidden="true">↗</span></a>
+                            <a class="evidence-link" href="https://github.com/Brook-sheet/med-reminder-web-app" target="_blank" rel="noopener noreferrer">View the GitHub repository <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="portfolio-card project-card">
+                        <span class="status-pill">Completed</span>
+                        <span class="card-kicker">PERSONAL PROJECT</span>
+                        <h3>Student Schedule Tracker</h3>
+                        <p>A student schedule tracking project.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Xlime75/StudentScheduleTracker" target="_blank" rel="noopener noreferrer">View the GitHub repository <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="portfolio-card project-card">
+                        <span class="status-pill">Completed</span>
                         <span class="card-kicker">COURSE: IT 305: Application Development and Emerging Technologies</span>
                         <h3>AI-Enabled Smart Trash Bin Automatic Waste Classification and Proper Segregation</h3>
                         <p>As waste management becomes increasingly complex, this project aims to develop an AI-powered solution for automatic waste classification and proper segregation in smart trash bins.</p>
-                        <p><strong>My contribution:</strong> Backend and Hardware Development, Created the AI model for waste classification and implemented the automatic segregation mechanism.</p>
-                        <p><strong>Tools / result:</strong> [Node.js, Firebase, MongoDB, TensorFlow, Arduino]</p>
-                        <span class="evidence-todo"> <a href="https://github.com/Kmontajas/Back-end-G6" target="_blank">Backend</a> | <a href="https://github.com/Kmontajas/Front-end-G6" target="_blank">Frontend</a></span>
+                        <p><strong>My contribution:</strong> Backend and hardware development, including the waste-classification AI model and automatic segregation mechanism.</p>
+                        <p><strong>Technologies:</strong> Node.js, Firebase, MongoDB, TensorFlow, and Arduino.</p>
+                        <div class="project-links"><a href="https://github.com/Kmontajas/Back-end-G6" target="_blank" rel="noopener noreferrer">Backend <span aria-hidden="true">↗</span></a><a href="https://github.com/Kmontajas/Front-end-G6" target="_blank" rel="noopener noreferrer">Frontend <span aria-hidden="true">↗</span></a></div>
                     </article>
                     <article class="portfolio-card project-card">
+                        <span class="status-pill">Ongoing</span>
                         <span class="card-kicker">COURSE: ITC100: Capstone Project 1</span>
                         <h3>AI-Enhanced Smart Medication Reminder with Predictive Adherence Monitoring</h3>
-                        <p>This project was renamed to Rx Box: AI Driven Smart Pillbox for Correct Medication Adherence with Predictive Behavior Analysis and Family Notification Support for Risk Prevention</p>
-                        <p><strong>My contribution:</strong> Hardware Development, Designed and built the physical medication reminder device, code and documentation progress checker.</p>
-                        <p><strong>Tools / result:</strong> [MongoDB, Random Forest, Arduino]</p>
-                        <span class="evidence-todo"> <a href="https://med-reminder-web-app.vercel.app/sign-in?from=%2F" target="_blank">Web App</a> | <a href="https://github.com/Brook-sheet/med-reminder-web-app" target="_blank">GitHub</a></span>
-                    </article>
-                </div>
-                <p class="portfolio-prompt">Duplicate a project card for each significant project. Replace these prompts; do not leave sample text in the submitted version.</p>
-            </section>
-
-            <section class="portfolio-section" id="achievements">
-                <div class="section-heading">
-                    <p class="portfolio-eyebrow">06 · RECOGNITION</p>
-                    <h2>Other achievements</h2>
-                    <p>Include academic, professional, technical, and extracurricular milestones with evidence wherever possible.</p>
-                </div>
-                <article class="portfolio-card">
-                    <span class="card-kicker">ACHIEVEMENT / TRAINING</span>
-                    <h3>[Award, workshop, training, or recognition]</h3>
-                    <p><strong>Organizer:</strong> [Organization] · <strong>Date:</strong> [Month Year]</p>
-                    <p>[Why it matters or what you learned.]</p>
-                    <span class="evidence-todo">Add certificate or evidence link</span>
-                </article>
-            </section>
-
-            <section class="portfolio-section" id="competitions">
-                <div class="section-heading">
-                    <p class="portfolio-eyebrow">07 · CHALLENGE &amp; RECOGNITION</p>
-                    <h2>Competitions &amp; awards</h2>
-                    <p>Record the event, organizer, date, submitted work, placement, and supporting evidence.</p>
-                </div>
-                <div class="portfolio-grid">
-                    <article class="portfolio-card">
-                        <span class="card-kicker">COMPETITION / EVENT</span>
-                        <h3>[Competition name]</h3>
-                        <p><strong>Organizer &amp; date:</strong> [Organizer] · [Date]</p>
-                        <p><strong>Entry / placement:</strong> [Project submitted and award or participation result.]</p>
-                        <span class="evidence-todo">Add certificate, photo, or project link</span>
+                        <p>Rx Box is a smart pillbox concept for medication adherence, predictive behavior analysis, and family notifications.</p>
+                        <p><strong>My contribution:</strong> Hardware development, plus code and documentation progress tracking.</p>
+                        <p><strong>Technologies:</strong> MongoDB, Random Forest, and Arduino.</p>
+                        <div class="project-links"><a href="https://med-reminder-web-app.vercel.app/sign-in?from=%2F" target="_blank" rel="noopener noreferrer">Web app <span aria-hidden="true">↗</span></a><a href="https://github.com/Brook-sheet/med-reminder-web-app" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
                     </article>
                 </div>
             </section>
 
             <section class="portfolio-section" id="leadership">
                 <div class="section-heading">
-                    <p class="portfolio-eyebrow">08 · SERVICE &amp; LEADERSHIP</p>
+                    <p class="portfolio-eyebrow">06 · SERVICE &amp; LEADERSHIP</p>
                     <h2>Officership &amp; leadership</h2>
                 </div>
                 <article class="portfolio-card">
-                    <span class="card-kicker">ORGANIZATION · ACADEMIC YEAR [2023–2024]</span>
-                    <h3>Junior Officer - Technicals · FEU TECH Freshman Society</h3>
-                    <p><strong>Responsibilities and contributions:</strong> Supported the organization by assisting in technical matters in the school intrams activities.</p>
+                    <span class="card-kicker">FEU TECH FRESHMAN SOCIETY</span>
+                    <h3>Junior Officer, Technicals</h3>
+                    <p>Supported technical needs during the school's intramural activities.</p>
                     <a class="evidence-link" href="Photos/JO.png" target="_blank" rel="noopener">View acceptance letter <span aria-hidden="true">↗</span></a>
-                        </div>
-                        <a class="credential-thumb" href="Photos/JO.png" target="_blank" rel="noopener" aria-label="Acceptance letter for Junior Officer - Technicals position in FEU TECH Freshman Society"> </a>
                 </article>
             </section>
 

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Asher Daniel Tibayan about projects, collaboration, or opportunities.">
+    <link rel="icon" type="image/png" href="Photos/logo.png">
     <title>Asher Daniel Tibayan | Contact</title>
     
     <!-- Bootstrap CSS -->
@@ -11,13 +13,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="main.css">
 
-     <!-- Anime.js CDN -->
+    <!-- Anime.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    
-    <!-- Include SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -28,7 +25,7 @@
                 <img src="Photos/logo.png" alt="Logo" height="40" class="me-2">
                 <span class="fw-bold text-dark">ASHER</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -46,7 +43,7 @@
                         <a class="nav-link" href="tech-stack.html">Tech Stack</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -56,19 +53,23 @@
     <!-- Contact Section -->
     <section class="contact">
         <h1>Get in Touch</h1>
-        <p>Feel free to reach out to me through the form below or contact me directly via email.</p>
+        <p>I’m happy to hear about project ideas, collaboration, or opportunities. Send me a message and I’ll get back to you as soon as I can.</p>
         
         <div class="contact-form">
             <form id="contactForm" action="https://formspree.io/f/xwplrqjw" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <label for="contactName">Name</label>
+                <input id="contactName" type="text" name="name" autocomplete="name" placeholder="Your name" required>
+                <label for="contactEmail">Email address</label>
+                <input id="contactEmail" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" placeholder="How can I help?" required></textarea>
                 <button type="submit">Send Message</button>
+                <p id="contactStatus" class="contact-status" role="status" aria-live="polite"></p>
             </form>
         </div>
 
         <div class="contact-info">
-            <p>GitHub: <a href="https://github.com/Xlime75" target="_blank">https://github.com/Xlime75</a></p>
+            <p>Find me on <a href="https://github.com/Xlime75" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </div>
     </section>
 
