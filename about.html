@@ -41,7 +41,7 @@
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tech-stack.html">Tech Stack</a>
+                        <a class="nav-link" href="#tech-stack">Tech Stack</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -51,17 +51,120 @@
         </div>
     </nav>
 
+    <main class="about-page">
     <!-- About Me Section -->
-    <section class="about">
-        <div class="about-content">
-            <h1>About Me</h1>
-            <p>I’m Asher Daniel Magaling Tibayan, a BSIT student at St. Dominic College of Asia. I’m interested in programming, artificial intelligence, games, and web and app development. Before studying IT, I completed my first year in Computer Science with a specialization in Software Engineering at FEU Institute of Technology.</p>
-
-            <p>I’m working toward a career in software or game development, building useful applications and continuing to explore AI. I enjoy learning by making things, collaborating with others, and keeping up with new technologies. Away from school, I like playing online games, practicing guitar, and learning more about computers.</p>
-
-            <p>Explore my <a href="tech-stack.html">tech stack</a> and <a href="portfolio.html">projects and experience</a> to see what I’m learning and building.</p>
+    <section class="about about-hero" id="about">
+        <div class="about-content about-shell">
+            <div class="about-copy">
+                <p class="about-eyebrow">ABOUT ME <span></span> ASPIRING IT PROFESSIONAL</p>
+                <h1>Curious by nature.<br><span>Driven to build.</span></h1>
+                <p class="about-lead">I’m Asher Daniel Magaling Tibayan, a BSIT student who loves exploring how thoughtful software can turn ideas into something useful.</p>
+                <p class="about-story">At St. Dominic College of Asia, I’m growing my skills in programming and web and app development. Before that, I completed my first year in Computer Science with a specialization in Software Engineering at FEU Institute of Technology.</p>
+                <p class="about-story">I’m working toward a career in software or game development, and I’m especially interested in artificial intelligence. I learn by making things, collaborating, and staying curious. Outside school, you’ll find me playing online games, practicing guitar, or learning more about computers.</p>
+                <div class="about-actions">
+                    <a class="about-button about-button-primary" href="portfolio.html">Explore my portfolio <span aria-hidden="true">→</span></a>
+                    <a class="about-button about-button-secondary" href="#tech-stack">See what I use <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <aside class="about-profile" aria-label="A little more about Asher">
+                <div class="profile-image-wrap">
+                    <img src="Photos/asher0.png" alt="Portrait of Asher Daniel Tibayan">
+                    
+                </div>
+                <div class="profile-caption">
+                    <p class="profile-label">CURRENTLY STUDYING</p>
+                    <p class="profile-degree">Bachelor of Science in<br>Information Technology</p>
+                    <p class="profile-school">St. Dominic College of Asia</p>
+                </div>
+                <div class="profile-interests" aria-label="Areas of interest">
+                    <span>Software</span><span>Games</span><span>AI</span>
+                </div>
+            </aside>
         </div>
     </section>
+
+    <section class="techstack" id="tech-stack">
+        <div class="container">
+            <div class="stack-heading">
+                <div>
+                    <p class="stack-eyebrow">MY TOOLKIT</p>
+                    <h2>Tech Stack<span>.</span></h2>
+                </div>
+                <p class="techstack-intro">The technologies I’m learning and using to bring ideas to life. I’m always building on this toolkit as I take on new projects.</p>
+            </div>
+
+            <div class="stack-categories">
+                <article class="stack-category">
+                    <div class="category-heading"><span class="category-number">01</span><div><h3>Frontend</h3><p>Building interfaces for the web</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/ht.png" alt=""><span>HTML</span></div>
+                        <div class="skill-item"><img src="Photos/cs.png" alt=""><span>CSS</span></div>
+                        <div class="skill-item"><img src="Photos/react.png" alt=""><span>React</span></div>
+                        <div class="skill-item"><img src="Photos/bslogo.png" alt=""><span>Bootstrap</span></div>
+                    </div>
+                </article>
+
+                <article class="stack-category">
+                    <div class="category-heading"><span class="category-number">02</span><div><h3>Backend</h3><p>Server-side development</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/node.png" alt=""><span>Node.js</span></div>
+                        <div class="skill-item"><img src="Photos/ex.png" alt=""><span>Express.js</span></div>
+                    </div>
+                </article>
+
+                <article class="stack-category">
+                    <div class="category-heading"><span class="category-number">03</span><div><h3>Programming Languages</h3><p>Languages I’m exploring</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/js.png" alt=""><span>JavaScript</span></div>
+                        <div class="skill-item"><img src="Photos/type.png" alt=""><span>TypeScript</span></div>
+                        <div class="skill-item"><img src="Photos/py.png" alt=""><span>Python</span></div>
+                        <div class="skill-item"><img src="Photos/java.png" alt=""><span>Java</span></div>
+                        <div class="skill-item"><img src="Photos/c.png" alt=""><span>C</span></div>
+                        <div class="skill-item"><img src="Photos/c++.png" alt=""><span>C++</span></div>
+                        <div class="skill-item"><img src="Photos/dart.png" alt=""><span>Dart</span></div>
+                    </div>
+                </article>
+
+                <article class="stack-category">
+                    <div class="category-heading"><span class="category-number">04</span><div><h3>Frameworks</h3><p>Web and app development</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/next.png" alt=""><span>Next.js</span></div>
+                        <div class="skill-item"><img src="Photos/flutter.png" alt=""><span>Flutter</span></div>
+                    </div>
+                </article>
+
+                <article class="stack-category">
+                    <div class="category-heading"><span class="category-number">05</span><div><h3>Web Development Tools</h3><p>Testing and deployment</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/postman.png" alt=""><span>Postman</span></div>
+                        <div class="skill-item"><img src="Photos/vercel.png" alt=""><span>Vercel</span></div>
+                        <div class="skill-item"><img src="Photos/render.png" alt=""><span>Render</span></div>
+                    </div>
+                </article>
+
+                <article class="stack-category">
+                    <div class="category-heading"><span class="category-number">06</span><div><h3>Database</h3><p>Data and backend services</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/mongodb.png" alt=""><span>MongoDB</span></div>
+                        <div class="skill-item"><img src="Photos/firebase.png" alt=""><span>Firebase</span></div>
+                    </div>
+                </article>
+
+                <article class="stack-category stack-category-wide">
+                    <div class="category-heading"><span class="category-number">07</span><div><h3>Tools &amp; IDEs</h3><p>Everyday development tools</p></div></div>
+                    <div class="skill-grid">
+                        <div class="skill-item"><img src="Photos/vs_code.png" alt=""><span>Visual Studio Code</span></div>
+                        <div class="skill-item"><img src="Photos/git.png" alt=""><span>Git</span></div>
+                        <div class="skill-item"><img src="Photos/github.png" alt=""><span>GitHub</span></div>
+                        <div class="skill-item"><img src="Photos/net_beans.png" alt=""><span>NetBeans</span></div>
+                        <div class="skill-item"><img src="Photos/android_studio.png" alt=""><span>Android Studio</span></div>
+                        <div class="skill-item"><img src="Photos/dev.png" alt=""><span>Dev C++</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
