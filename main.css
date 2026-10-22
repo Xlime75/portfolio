@@ -604,11 +604,28 @@ h2 {
   margin-bottom: 12px;
 }
 
+.credential-details {
+  min-width: 0;
+}
+
+.credential-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.credential-media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 14px;
+}
+
 .credential-thumb {
   display: block;
   flex: 0 0 auto;
   overflow: hidden;
-  width: min(100%, 210px);
+  width: min(100%, 160px);
   border: 1px solid #e2e9f0;
   border-radius: 8px;
   background: #f8fafc;
@@ -618,8 +635,40 @@ h2 {
   display: block;
   width: 100%;
   aspect-ratio: 1.25;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
+}
+
+.credential-badge {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: min(100%, 150px);
+  padding: 10px;
+  border: 1px solid #e2e9ef;
+  border-radius: 8px;
+  background: #fff;
+  color: #087b8a;
+  font-size: .8rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.credential-badge:hover {
+  border-color: #bdd8dc;
+  color: #075c68;
+  text-decoration: underline;
+}
+
+.credential-badge img {
+  display: block;
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
 }
 
 .portfolio-prompt,
@@ -956,68 +1005,6 @@ h2 {
   font-size: .77rem;
 }
 
-.credly-badges {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 13px;
-  margin: 20px 0 30px;
-}
-
-.credly-badge {
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr) 18px;
-  align-items: center;
-  gap: 14px;
-  min-width: 0;
-  padding: 14px;
-  border: 1px solid #e0e9ef;
-  border-radius: 13px;
-  background: #fff;
-  box-shadow: 0 8px 24px rgba(28, 55, 83, .05);
-  color: #163856;
-  text-decoration: none;
-  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
-}
-
-.credly-badge:hover {
-  transform: translateY(-2px);
-  border-color: #bdd8dc;
-  box-shadow: 0 14px 30px rgba(28, 55, 83, .09);
-  color: #163856;
-}
-
-.credly-badge img {
-  display: block;
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-}
-
-.credly-badge strong,
-.credly-badge small {
-  display: block;
-}
-
-.credly-badge strong {
-  font-size: .91rem;
-  font-weight: 780;
-  line-height: 1.4;
-}
-
-.credly-badge small {
-  margin-top: 4px;
-  color: #71818d;
-  font-size: .75rem;
-  line-height: 1.4;
-}
-
-.credly-badge-link {
-  align-self: start;
-  color: #138078;
-  font-size: .9rem;
-  font-weight: 800;
-}
-
 .project-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -1116,20 +1103,6 @@ h2 {
     padding-top: 0;
   }
 
-  .credly-badges {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .credly-badge {
-    grid-template-columns: 62px minmax(0, 1fr) 16px;
-    gap: 11px;
-    padding: 12px;
-  }
-
-  .credly-badge img {
-    width: 62px;
-    height: 62px;
-  }
 }
 
 :root {
