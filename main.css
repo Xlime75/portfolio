@@ -1652,6 +1652,7 @@ h1, h2, h3, .small-text, .cta-button, .footer a,
   .portfolio-hero {
     padding: 64px 0 54px;
   }
+
 }
 
 @media (max-width: 520px) {
